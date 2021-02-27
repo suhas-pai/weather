@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+  color: rgb(55, 65, 81);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 0.5rem;
+  margin-bottom: 50px;
+  align-content: center;
+}
+
+.grid-item {
+  border: rgba(49, 163, 192, 0.582) solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border-radius: 0.5rem;
+}
+
+#zipcode-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-icon {
+  margin-right: 10px;
+}

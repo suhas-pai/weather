@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Weather</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div id="root">
+      <h1>The Weather</h1>
+      <h2 id="city"></h2>
+      <form id="zipcode-form" onsubmit="handleFormEnter(event)">
+        <div>
+          <label for="zipcode">Zipcode: </label>
+          <input
+            type="number"
+            required
+            pattern="[0-9]*"
+            id="zipcode"
+            min="0"
+            max="99950"
+            step="1"
+            placeholder="Zipcode Here"
+            oninput="zipcodeOnInput(event)"
+          />
+          <label for="units">Units: </label>
+          <select id="units">
+            <option value="imperial">Fahrenheit</option>
+            <option value="metric">Celsius</option>
+            <option value="">Kelvin</option>
+          </select>
+          <input
+            id="updateButton"
+            type="button"
+            value="Update"
+            onclick="updateZipcode(event)"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
